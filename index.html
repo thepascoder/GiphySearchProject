@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Giphy Search Project Assignment</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2706afda7e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="contentBox">
+        <div class="header">
+            <h3>~ GIPHY API SEARCH PROJECT ~</h3>
+            <form id="query-form">
+                <select name="types" id="types" class="pointer">
+                    <option value="stickers">Stickers</option>
+                    <option value="gifs">Giphs</option>
+                </select><br />
+                <input id="query" name="search" type="search" placeholder="Search..." required>
+                <input type="submit" id="submit_button" value="GENERATE" class="btn">
+                <input type="button" id="reload_button" value="RELOAD" class="btn">
+            </form>
+            <a href="https://twitter.com/thepascoder" class="icon"><i class="fab fa-twitter"
+                    style="font-size:28px;"></i>thepascoder</a> <a href="https://github.com/thepascoder" class="icon"><i
+                    class="fab fa-github" style="font-size:28px;"></i>thepascoder</a>
+        </div>
+        <span class="errModal" id="errModal"></span>
+        <div id="gifContainer">
+            <img src="" alt="" class="box" id="img">
+        </div>
+    </div>
+    <div class="searchQuery" id="searchQueryBox">
+        <span class="srhColor">SEARCHED WORDS:</span>
+        <span id="queryList">
+        <!-- search query output -->
+        </span>
+    </div>
+    <footer>
+        <h2>Powered by Giphy</h2>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
